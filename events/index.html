@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <header class="header">
+        <nav class="nav">
+            <a class="nav__logo" href="../main_theme/index.html"><img src="./resource/header/logo.svg" alt=""></a>
+            <ul>
+                <a class="nav__a" href="">Лента</a>
+                <a class="nav__a active" href="../events/index.html">Конкурс</a>
+                <a class="nav__a" href="../ArtBack/index.html">О нас</a>
+            </ul>
+            <div class="nav__search">
+                <button><img src="resource/" alt=""></button>
+                <input type="text" placeholder="Найти пользователя, пост, тему">
+            </div>
+            <div class="nav__profile">
+                <button id="upload-button"><img src="./resource/header/upload.png" alt=""></button>
+                <button id="profile-button" onclick="window.location.href='../LK/index.html';"><img src="./resource/header/profile.png" alt=""></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contests_section">
+        <div class="center">
+            <h1>Конкурсы</h1>
+            <div class="filters">
+                <button class="filter_btn active">Все</button>
+                <button class="filter_btn">Digital</button>
+                <button class="filter_btn">Живопись</button>
+                <button class="filter_btn">Фото</button>
+                <button class="filter_btn">3D</button>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <section class="promo_section">
+        <div class="center">
+            <div class="overlay_reg" id="regOverlay">
+                <div class="container_reg">
+                    <div class="form-section">
+                        <div class="form-content">
+                            <h1 class="form-title">Регистрация на участие</h1>
+
+                            <form class="registration-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-input" placeholder="ФИО" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="email" class="form-input" placeholder="email" required>
+                                </div>
+
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" class="checkbox-input" required>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-text">
+                                            Я <span class="highlight">принимаю</span> <a href="../politics/index.html">пользовательское соглашение и обработку персональных данных.</a>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="image-section">
+                        <button class="close-btn" id="closeRegBtn">×</button>
+                        <div class="image-overlay"></div>
+                        <img src="resource/sasha.png" alt="Art" class="hero-image">
+                        <span class="artist-credit">Саша Алексеенко</span>
+                    </div>
+                </div>
+            </div>
+            <div class="promo_card" id="promoCard">
+                <div class="card_content">
+                    <div class="text_block">
+                        <h1>Третья мера: 3D-искусство</h1>
+                        <h3>CDprojectRed x Artback</h3>
+                        <p>Погрузитесь в мир безграничных возможностей и создайте свою уникальную вселенную! CD Project Red объявляет конкурс «3D-Обитель», где каждый талантливый 3D-художник может воплотить в жизнь своё видение фантастического жилища — от футуристического убежища до мистического замка.</p>
+                        <button class="details_btn" id="detailsBtn">Подробнее</button>
+                    </div>
+                    <div class="image_block" id="imageBlock">
+                        <img src="resource/smesher.png" alt="" class="smesher_img">
+                    </div>
+                </div>
+
+                <div class="expanded_content" id="expandedContent">
+                    <div class="dates_block">
+                        <p><strong>Приём заявок:</strong> с 1 июля по 31 августа 2026 года.</p>
+                        <p><strong>Подведение итогов:</strong> 15 сентября 2026 года.</p>
+                        <p><strong>Объявление победителей:</strong> 20 сентября 2026 года на официальном сайте CD Project Red и в соцсетях.</p>
+                    </div>
+
+                    <div class="info_block">
+                        <div class="theme">
+                            <h2>Тема конкурса</h2>
+                            <p>Создайте 3D-модель «Обители» — пространства, которое может служить домом, крепостью, лабораторией или убежищем в мире научной фантастики или фэнтези. Ваша работа должна отражать характер и историю своего обитателя, будь то отважный воин, гениальный изобретатель, древний маг или загадочный инопланетянин.</p>
+                        </div>
+                        <div class="accents">
+                            <h2>Ключевые акценты:</h2>
+                            <ul>
+                                <li><strong>Атмосфера:</strong> Проработайте настроение локации: таинственность, технологичность, уют, заброшенность и т.д.</li>
+                                <li><strong>Функциональность:</strong> Покажите, как пространство используется: есть ли зоны отдыха, работы, обороны, ритуалов?</li>
+                                <li><strong>Детали:</strong> Мелкие элементы (книги на полках, следы износа, голографические интерфейсы) оживят вашу сцену.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="prizes_block">
+                        <h2>Призы</h2>
+                        <div class="prizes">
+                            <div class="prize">
+                                <img src="resource/img (1).png" alt="">
+                                <h3>1-е место</h3>
+                                <p>Стажировка в арт-отделе CD Project Red (3 месяца) + публикация работы в официальном артбуке студии.</p>
+                            </div>
+                            <div class="prize">
+                                <img src="resource/img (2).png" alt="">
+                                <h3>2-е место</h3>
+                                <p>Профессиональный графический планшет Wacom Cintiq + годовая подписка на 3D-софт (Blender Studio, Substance 3D).</p>
+                            </div>
+                            <div class="prize">
+                                <img src="resource/img (3).png" alt="">
+                                <h3>3-е место</h3>
+                                <p>Набор цифровых текстур и моделей от партнёров конкурса + фирменный мерч CD Project Red.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action_buttons">
+                        <button class="participate_btn">Участвовать</button>
+                        <button class="collapse_btn" id="collapseBtn">Свернуть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+
+        <div class="footer__top">
+
+          <div class="footer__brand">
+            <a class="footer__logo" href="">
+                <img src="./resource/footer/logo.png" alt="">
+            </a>
+            <p class="footer__tagline">artback.support@gmail.com</p>
+          </div>
+
+          <nav class="footer__nav" aria-label="Навигация по сайту">
+    <div class="footer__nav-group">
+      <ul class="menu-btn-list">
+        <li><button class="menu-btn">Лента</button></li>
+        <li><button class="menu-btn" onclick="window.location.href='../ArtBack/index.html'">О нас</button></li>
+        <li><button class="menu-btn" onclick="window.location.href='../events/index.html'">Конкурсы</button></li>
+        <li><button class="menu-btn" onclick="window.location.href='../LK/index.html'">Профиль</button></li>
+      </ul>
+    </div>
+
+            <div class="footer__nav-group">
+              <h3>Компания</h3>
+              <ul>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Конфиденциальность</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__nav-group">
+              <h3>Поддержка</h3>
+              <ul>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Чат с модерацией</a></li>
+                <li><a href="#">Предложка</a></li>
+                <li><a href="#">Связаться с нами</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="footer__newsletter">
+            <h3>Рассылка</h3>
+            <p>Уведомление о новых конкурсах</p>
+            <form class="footer__form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Готово ✓';">
+              <label for="footer-email" class="visually-hidden">Email</label>
+              <input id="footer-email" type="email" placeholder="Ваш email" required>
+              <button type="submit">Подписаться</button>
+            </form>
+            <p class="footer__form-note">Отписаться можно в любой момент.</p>
+          </div>
+
+        </div>
+
+        <hr class="footer__divider">
+
+        <div class="footer__bottom">
+          <div class="footer__legal">
+            <span>© 2026 Artback. Все права защищены.</span>
+          </div>
+
+          <div class="footer__social">
+            <a href="" aria-label="Tg">
+                <img src="./resource/footer/tg_logo.png" alt="">
+            </a>
+            <a href="" aria-label="Vk">
+                <img src="./resource/footer/Vk_logo.png" alt="">
+            </a>
+            <a href="" aria-label="Boosty">
+                <img src="./resource/footer/boosty_logo.png" alt="">
+            </a>
+            </a>
+          </div>
+        </div>
+      </hr>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>

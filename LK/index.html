@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <header class="header">
+        <nav class="nav">
+            <a class="nav__logo" href="../main_theme/index.html"><img src="./resource/header/logo.svg" alt=""></a>
+            <ul>
+                <a class="nav__a" href="../lenta-page/front/index.html">Лента</a>
+                <a class="nav__a" href="../events/index.html">Конкурс</a>
+                <a class="nav__a" href="../ArtBack/index.html">О нас</a>
+            </ul>
+            <div class="nav__search">
+                <button><img src="resource/search.png" alt=""></button>
+                <input type="text" placeholder="Найти пользователя, пост, тему">
+            </div>
+            <div class="nav__profile">
+                <button id="upload-button"><img src="./resource/header/upload.png" alt=""></button>
+                <button id="profile-button" onclick="window.location.href='../LK/index.html';"><img src="./resource/header/profile.png" alt=""></button>
+            </div>
+        </nav>
+    </header>
+    <section class="profile">
+        <!-- Оверлей монетизации -->
+        <div class="overlay" id="monetizationOverlay">
+            <div class="monetization">
+                <img src="resource/dollar-circle_bg.svg" alt="" class="bg_dollar">
+
+                <!-- Главный экран -->
+                <div class="main_screen active">
+                    <button id="nazad" class="nazad">
+                        <img src="resource/Vector.svg" alt="">
+                    </button>
+                    <div class="center">
+                        <h1>Монетизация</h1>
+                        <div class="balance">
+                            <p>Баланс:</p>
+                            <h2 id="balanceSum">0₽</h2>
+                        </div>
+                        <div class="withdraw">
+                            <h3>Вывести</h3>
+                            <input type="number" placeholder="Сколько вывести" id="withdrawInput">
+                            <button id="withdrawBtn">Вывести</button>
+                        </div>
+                        <div class="add">
+                            <h3>Пополнить</h3>
+                            <input type="number" placeholder="Сколько пополнить" id="addInput">
+                            <button id="addBtn">Пополнить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Экран карты -->
+                <div class="card_screen">
+                    <button id="toBalance" class="toBalance">
+                        <img src="resource/Vector.svg" alt="">
+                        <p>К балансу</p>
+                    </button>
+                    <div class="center">
+                        <h1>Монетизация</h1>
+                        <div class="vibar">
+                            <a href="" class="focus">По карте</a>
+                            <a href="">СБП</a>
+                            <a href="">По телефону</a>
+                        </div>
+                        <div class="inputos">
+                            <input type="number" placeholder="Номер карты" id="cardNumber">
+                            <div>
+                                <input type="text" placeholder="гг./гг" id="cardDate">
+                                <input type="number" placeholder="CVC" id="cardCvc">
+                            </div>
+                        </div>
+                        <div class="sogl">
+                            <input type="checkbox" id="soglCheck">
+                            <p>Я принимаю <a href="">пользовательское соглашение и обработку персональных данных.</a></p>
+                        </div>
+                        <button class="save_card" id="saveCardBtn">Сохранить карту</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Оверлей настроек профиля -->
+        <div class="overlay" id="profileOverlay">
+            <div class="profile_settings">
+                <img src="resource/dollar-circle_bg.svg" alt="" class="bg_dollar">
+                <button id="profileNazad" class="nazad">
+                    <img src="resource/Vector.svg" alt="">
+                </button>
+                <div class="center">
+                    <div class="banner_section">
+                        <div class="banner"></div>
+                        <div class="avatarka">
+                            <img src="resource/avatar-placeholder.svg" alt="" id="avatarPreview">
+                        </div>
+                    </div>
+                    <div class="profile_form">
+                        <input type="text" placeholder="Никнейм" id="nickInput">
+                        <input type="text" placeholder="@username" id="usernameInput">
+                        <textarea placeholder="Описание" id="descInput" rows="4"></textarea>
+                        <button class="save_profile" id="saveProfileBtn">Сохранить</button>
+                    </div>
+                    <div class="personal_data">
+                        <h2>Персональные данные</h2>
+                        <input type="email" placeholder="Электронная почта" id="emailInput">
+                        <div class="password_row">
+                            <input type="password" placeholder="Пароль" id="passwordInput">
+                            <button class="change_pass" id="changePassBtn">Сменить пароль</button>
+                        </div>
+                        <button class="save_data" id="saveDataBtn">Сохранить данные</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cartochka">
+            <div class="verh">
+                <div class="banner"></div>
+                <div class="avatarka"></div>
+            </div>
+            <div class="niz">
+                <div class="buttons">
+                    <button id="settings"><img src="resource/Interface/Settings.svg" alt=""></button>
+                    <button id="money"><img src="resource/dollar-circle.svg" alt=""></button>
+                </div>
+                <div class="info">
+                    <h1 id="nick">
+                        Nickname
+                    </h1>
+                    <h6 id="username">
+                        @username
+                    </h6>
+                    <p id="descp">
+                        Lorem ipsum dolor sit amet consectetur. Pharetra sagittis aliquam massa congue pulvinar id dolor sed. Rutrum feugiat amet sed tortor a.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="publish">Опубликовать</button>
+    </section>
+    
+    <div class="potom">
+
+    </div>
+
+<footer class="footer">
+  <div class="footer__inner">
+
+    <div class="footer__top">
+
+      <div class="footer__brand">
+        <a class="footer__logo" href="">
+            <img src="./resource/logo.png" alt="">
+        </a>
+        <p class="footer__tagline">artback.support@gmail.com</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Навигация по сайту">
+<div class="footer__nav-group">
+  <ul class="menu-btn-list">
+    <li><button class="menu-btn" onclick="window.location.href='../lenta-page/front/index.html';">Лента</button></li>
+    <li><button class="menu-btn" onclick="window.location.href='../ArtBack/index.html';">О нас</button></li>
+    <li><button class="menu-btn" onclick="window.location.href='../events/index.html';">Конкурсы</button></li>
+    <li><button class="menu-btn" onclick="window.location.href='../LK/index.html';">Профиль</button></li>
+  </ul>
+</div>
+
+        <div class="footer__nav-group">
+          <h3>Компания</h3>
+          <ul>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-group">
+          <h3>Поддержка</h3>
+          <ul>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Чат с модерацией</a></li>
+            <li><a href="#">Предложка</a></li>
+            <li><a href="#">Связаться с нами</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer__newsletter">
+        <h3>Рассылка</h3>
+        <p>Уведомление о новых конкурсах</p>
+        <form class="footer__form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Готово ✓';">
+          <label for="footer-email" class="visually-hidden">Email</label>
+          <input id="footer-email" type="email" placeholder="Ваш email" required>
+          <button type="submit">Подписаться</button>
+        </form>
+        <p class="footer__form-note">Отписаться можно в любой момент.</p>
+      </div>
+
+    </div>
+
+    <hr class="footer__divider">
+
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <span>© 2026 Artback. Все права защищены.</span>
+      </div>
+
+      <div class="footer__social">
+        <a href="" aria-label="Tg">
+            <img src="./resource/tg_logo.png" alt="">
+        </a>
+        <a href="" aria-label="Vk">
+            <img src="./resource/Vk_logo.png" alt="">
+        </a>
+        <a href="" aria-label="Boosty">
+            <img src="./resource/boosty_logo.png" alt="">
+        </a>
+        </a>
+      </div>
+    </div>
+  </hr>
+</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

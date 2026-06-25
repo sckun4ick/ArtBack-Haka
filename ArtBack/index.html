@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="header">
+        <nav class="nav">
+            <a class="nav__logo" href="../main_theme/index.html"><img src="logo.png" alt=""></a>
+            <ul>
+                <a class="nav__a" href="">Лента</a>
+                <a class="nav__a" href="../events/index.html">Конкурс</a>
+                <a class="nav__a active" href="../ArtBack/index.html">О нас</a>
+            </ul>
+            <div class="nav__search">
+                <button><img src="Frame 50.png" alt=""></button>
+                <input type="text" placeholder="Найти пользователя, пост, тему">
+            </div>
+            <div class="nav__profile">
+                <button id="upload-button"><img src="Vector.png" alt=""></button>
+                <button id="profile-button" onclick="window.location.href='../LK/index.html';"><img src="Vector (1).png" alt=""></button>
+            </div>
+        </nav>
+    </header>
+    <section class="about_us">
+        <div class="all">
+            <div class="main">
+                <div>
+                    <img src="Group 19.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="artback">
+                        <h1>ArtBack</h1>
+                        <p class="zag">Комьюнити для роста</p>
+                    </div>
+                    <div class="text">
+                        <p class="text_p">Мы создали цифровую среду, где художники, иллюстраторы и дизайнеры получают не только лайки, но и понятную карту развития.
+                         ArtBack объединяет авторов и ценителей искусства вокруг честной обратной связи, объективной оценки и прямой поддержки талантов.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="Group 20.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="left-column">
+                <div class="left-content">
+                    <h1>Публикуйте, получайте фидбек, развивайте навыки</h1>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="right-content">
+                    <p>
+                       ArtBack — это платформа с уникальной системой оценки работ по разным параметрам. Вместо субъективных реакций и эмодзи, вы получаете структурированные комментарии, отслеживаете прогресс в личном кабинете и растёте вместе с комьюнити.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="categories-section">
+        <h2 class="categories-title">Категории</h2>
+
+        <div class="categories-grid">
+
+            <!-- ВЕРХНИЙ РЯД: 3 карточки 480×430 -->
+            <div class="category-card small" data-category="digital">
+                <img src="Rectangle 10.png" class="category-image" alt="Digital">
+                <div class="category-overlay">
+                    <span class="category-label">Digital</span>
+                </div>
+                <div class="category-info-panel">
+                    <button class="close-btn">&times;</button>
+                    <h3 class="info-title">Digital</h3>
+                    <div class="params-grid">
+                        <div class="params-col">
+                            <h4>Объективные параметры</h4>
+                            <ul>
+                                <li>Техника</li>
+                                <li>Композиция</li>
+                                <li>Цвет</li>
+                                <li>Освещение</li>
+                            </ul>
+                        </div>
+                        <div class="params-col">
+                            <h4>Субъективные параметры</h4>
+                            <ul>
+                                <li>Атмосфера</li>
+                                <li>Оригинальность</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card small" data-category="painting">
+                <img src="Rectangle 10.png" class="category-image" alt="Живопись">
+                <div class="category-overlay overlay-painting">
+                    <span class="category-label">Живопись</span>
+                </div>
+                <div class="category-info-panel">
+                    <button class="close-btn">&times;</button>
+                    <h3 class="info-title">Живопись</h3>
+                    <div class="params-grid">
+                        <div class="params-col">
+                            <h4>Объективные параметры</h4>
+                            <ul>
+                                <li>Техника</li>
+                                <li>Композиция</li>
+                                <li>Цвет</li>
+                                <li>Освещение</li>
+                            </ul>
+                        </div>
+                        <div class="params-col">
+                            <h4>Субъективные параметры</h4>
+                            <ul>
+                                <li>Атмосфера</li>
+                                <li>Оригинальность</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card small" data-category="3d">
+                <img src="Rectangle 10.png" class="category-image" alt="3D">
+                <div class="category-overlay overlay-3d">
+                    <span class="category-label">3D</span>
+                </div>
+                <div class="category-info-panel">
+                    <button class="close-btn">&times;</button>
+                    <h3 class="info-title">3D</h3>
+                    <div class="params-grid">
+                        <div class="params-col">
+                            <h4>Объективные параметры</h4>
+                            <ul>
+                                <li>Техника</li>
+                                <li>Композиция</li>
+                                <li>Цвет</li>
+                                <li>Освещение</li>
+                            </ul>
+                        </div>
+                        <div class="params-col">
+                            <h4>Субъективные параметры</h4>
+                            <ul>
+                                <li>Атмосфера</li>
+                                <li>Оригинальность</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- НИЖНИЙ РЯД: 2 карточки 720×430 -->
+            <div class="category-card large" data-category="photo">
+                <img src="Rectangle 10.png" class="category-image" alt="Фотография">
+                <div class="category-overlay overlay-photo">
+                    <span class="category-label">Фотография</span>
+                </div>
+                <div class="category-info-panel">
+                    <button class="close-btn">&times;</button>
+                    <h3 class="info-title">Фотография</h3>
+                    <div class="params-grid">
+                        <div class="params-col">
+                            <h4>Объективные параметры</h4>
+                            <ul>
+                                <li>Техника</li>
+                                <li>Композиция</li>
+                                <li>Цвет</li>
+                                <li>Освещение</li>
+                            </ul>
+                        </div>
+                        <div class="params-col">
+                            <h4>Субъективные параметры</h4>
+                            <ul>
+                                <li>Атмосфера</li>
+                                <li>Оригинальность</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card large" data-category="illustration">
+                <img src="Rectangle 10.png" class="category-image" alt="Иллюстрации">
+                <div class="category-overlay overlay-illustration">
+                    <span class="category-label">Иллюстрации</span>
+                </div>
+                <div class="category-info-panel">
+                    <button class="close-btn">&times;</button>
+                    <h3 class="info-title">Иллюстрации</h3>
+                    <div class="params-grid">
+                        <div class="params-col">
+                            <h4>Объективные параметры</h4>
+                            <ul>
+                                <li>Техника</li>
+                                <li>Композиция</li>
+                                <li>Цвет</li>
+                                <li>Освещение</li>
+                            </ul>
+                        </div>
+                        <div class="params-col">
+                            <h4>Субъективные параметры</h4>
+                            <ul>
+                                <li>Атмосфера</li>
+                                <li>Оригинальность</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="Platform">
+            <div class="we">
+                <div class="zagolovok67">
+                    <h1>Платформа, которую формируете вы!</h1>
+                    <div class="obvodka">
+                        <p>ArtBack развивается вместе с комьюнити.</p>
+                    </div>
+                </div>
+                <div class="knopki_zag">
+                    <button class="moder">Предложить идею</button>
+                    <button class="moder">Чат модерации</button>
+                    <button class="moder">Конкурсы</button>
+                </div>
+                <div class="konec">
+                    <h1>Ваш фидбек очень важен для нас!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="podderjka">
+            <div class="donat">
+                <div class="us">
+                    <h1>Вы можете поддержать нас!</h1>
+                </div>
+                <div class="proekt">
+                    <p>Проект развивается сугубо на инициативе авторов, если вы хотите поддержать проект:</p>
+                </div>
+                <div class="boosty">   
+                    <button class="kaka">
+                        <img src="socials.png" alt="Boosty" class="btn-icon">
+                        Boosty
+                    </button>
+                    <button class="kaka">
+                        <img src="socials (1).png" alt="Patreon" class="btn-icon">
+                        Patreon
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_d">
+            <div class="pred_footer">
+                <div class="logotip">
+                    <img src="белое лого.png" alt="">
+                    <a href="">artback.support@gmail.com</a>
+                </div>
+                <div class="lenta">
+                    <li><button class="knopochki" onclick="window.location.href='../lenta-page/front/index.html';">Лента</button></li>
+                    <li><button class="knopochki" onclick="window.location.href='../ArtBack/index.html';">О нас</button></li>
+                    <li><button class="knopochki" onclick="window.location.href='../events/index.html';">Конкурсы</button></li>
+                    <li><button class="knopochki" onclick="window.location.href='../LK/index.html';">Профиль</button></li>
+                </div>
+                <div class="socseti">
+                    <p>Мы в соц. сетях:</p>
+                    <div class="group">
+                        <img src="телеграмм.png" alt="" class="kartina">
+                        <a href="">Группа VK</a>
+                    </div>
+                    <div class="group">
+                        <img src="вк.png" alt="" class="kartina">
+                        <a href="">Telegram</a>
+                    </div>
+                    <div class="group">
+                        <img src="ютуб.png" alt="" class="kartina">
+                        <a href="">Youtube</a>
+                    </div>
+                </div>
+                <div class="svyaz">
+                    <p>Связаться с нами:</p>
+                    <a href="">Предложка</a>
+                    <a href="">Чат Модерации</a>
+                </div>
+                <div class="politica">
+                    <p>Правовая информация:</p>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+        <div class="prava">
+            <div class="prava_o">
+                <a href="">Все права защищены</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

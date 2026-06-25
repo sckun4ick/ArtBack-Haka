@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtBack - Лучший сайт на свете</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__logo" href="../../main_theme/index.html"><img src="images/header/logo.svg" alt=""></a>
+            <ul>
+                <a class="nav__a active" href="">Лента</a>
+                <a class="nav__a" href="../../events/index.html">Конкурс</a>
+                <a class="nav__a" href="../../ArtBack/index.html">О нас</a>
+            </ul>
+            <div class="nav__search">
+                <button><img src="images/header/search.png" alt=""></button>
+                <input type="text" placeholder="Найти пользователя, пост, тему">
+            </div>
+            <div class="nav__profile">
+                <button id="upload-button"><img src="images/header/upload.png" alt=""></button>
+                <button id="profile-button" ><img src="images/header/profile.png" alt=""></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="upload-modal" id="uploadModal">
+            <section class="upload-section">
+                <button class="modal-close" id="closeModalBtn">&times;</button>
+                
+                <div class="center">
+                    <div class="upload" id="uploadArea">
+                        <img src="resource/Vector.svg" alt="Иконка картинки" class="upload-icon">
+                        <p>Загрузить свою работу</p>
+                        <img class="preview" id="preview" alt="Предпросмотр">
+                        <input type="file" class="upload-input" id="fileInput" accept="image/*">
+                    </div>
+                
+                    <div class="inputs_media">
+                        <div class="left">
+                            <input type="text" id="titleInput" placeholder="Название работы">
+                            <select id="categorySelect">
+                                <option value="" disabled selected>Выбрать категорию</option>
+                                <option value="drawing">Рисунок</option>
+                                <option value="photo">Фотография</option>
+                                <option value="design">Дизайн</option>
+                                <option value="other">Другое</option>
+                            </select>
+                            <button id="publishBtn">Опубликовать</button>
+                        </div>
+                        <textarea id="descriptionInput" placeholder="Описание..."></textarea>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="lenta">
+            <div class="lenta__header">
+                <h1>Лента работ</h1>
+                <div class="lenta__header-genres">
+                    <button class="active">Все</button>
+                    <button>Рисунки</button>
+                    <button>Фотографии</button>
+                    <button>Дизайн</button>
+                    <button>Другое</button>
+                </div>
+            </div>
+
+            <div id="lenta__arts"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="footer__logo" href="">
+                        <img src="images/footer/logo.png" alt="">
+                    </a>
+                    <p class="footer__tagline">artback.support@gmail.com</p>
+                </div>
+                <nav class="footer__nav" aria-label="Навигация по сайту">
+                    <div class="footer__nav-group">
+                        <ul class="menu-btn-list">
+                            <li><button class="menu-btn" onclick="window.location.href='../../lenta-page/front/index.html';">Лента</button></li>
+                            <li><button class="menu-btn" onclick="window.location.href='../../ArtBack/index.html';">О нас</button></li>
+                            <li><button class="menu-btn" onclick="window.location.href='../../events/index.html';">Конкурсы</button></li>
+                            <li><button class="menu-btn" onclick="window.location.href='../../LK/index.html';">Профиль</button></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-group">
+                        <h3>Компания</h3>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-group">
+                        <h3>Поддержка</h3>
+                        <ul>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Чат с модерацией</a></li>
+                            <li><a href="#">Предложка</a></li>
+                            <li><a href="#">Связаться с нами</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__newsletter">
+                    <h3>Рассылка</h3>
+                    <p>Уведомление о новых конкурсах</p>
+                    <form class="footer__form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Готово ✓';">
+                        <label for="footer-email" class="visually-hidden">Email</label>
+                        <input id="footer-email" type="email" placeholder="Ваш email" required>
+                        <button type="submit">Подписаться</button>
+                    </form>
+                    <p class="footer__form-note">Отписаться можно в любой момент.</p>
+                </div>
+            </div>
+            <div class="footer__divider">
+                <div class="footer__bottom">
+                    <div class="footer__legal">
+                        <span>© 2026 Artback. Все права защищены.</span>
+                        <a href="#">Конфиденциальность</a>
+                        <a href="#">Условия использования</a>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <a href="" aria-label="Tg">
+                        <img src="images/footer/tg_logo.png" alt="">
+                    </a>
+                    <a href="" aria-label="Vk">
+                        <img src="images/footer/Vk_logo.png" alt="">
+                    </a>
+                    <a href="" aria-label="Boosty">
+                        <img src="images/footer/boosty_logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="req.js"></script>
+</body>
+</html>

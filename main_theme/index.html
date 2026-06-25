@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__logo" href=""><img src="images/header/logo.svg" alt=""></a>
+            <ul>
+                <a class="nav__a" href="../lenta-page/front/index.html">Лента</a>
+                <a class="nav__a" href="../events/index.html">Конкурс</a>
+                <a class="nav__a" href="../ArtBack/index.html">О нас</a>
+            </ul>
+            <div class="nav__search">
+                <button><img src="images/header/search.png" alt=""></button>
+                <input type="text" placeholder="Найти пользователя, пост, тему">
+            </div>
+            <div class="nav__profile">
+                <button id="upload-button"><img src="images/header/upload.png" alt=""></button>
+                <button id="profile-button" onclick="window.location.href='../LK/index.html';"><img src="images/header/profile.png" alt=""></button>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="slider-viewport">
+        <!-- 1. Слайдер картинок (едет влево) -->
+        <div class="slider-track" id="sliderTrack">
+            <div class="slide" style="background-image: url(resource/bg_image\ \(2\).png);"></div>
+            <div class="slide" style="background-image: url(resource/bg_image\ \(1\).png);"></div>
+            <div class="slide" style="background-image: url(resource/bg_image\ \(3\).png);"></div>
+        </div>
+
+        <!-- 2. Верхняя белая волна (плывет вправо) -->
+        <div class="wave wave-top">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V60Q150,100,300,60T600,60T900,60T1200,60V0Z" fill="#ffffff"/>
+            </svg>
+        </div>
+
+        <!-- 3. Центральный текст (аккуратно меняет цвет) -->
+        <div class="text-container">
+            <h1 class="main-title" id="sliderText">ARTBACK</h1>
+            <p class="subtitle">платформа для творческого роста</p>
+        </div>
+
+        <!-- 4. Нижняя чёрная волна (плывет влево) -->
+        <div class="wave wave-bottom">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,120V60Q150,20,300,60T600,60T900,60T1200,60V120Z" fill="#000000"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2 class="about-title">О нас</h2>
+            
+            <p class="about-text">
+            Мы создали цифровую среду, где художники, иллюстраторы и дизайнеры получают не только лайки, но и понятную карту развития. ArtBack объединяет авторов и ценителей искусства вокруг честной обратной связи, объективной оценки и прямой поддержки талантов.
+            </p>
+            
+            <a href="#" class="about-link">Узнать подробнее</a>
+        </div>
+    </section>
+    <section class="promo-section">
+        <div class="promo-section__bg"></div>
+        <div class="promo-section__content">
+            <span class="promo-section__subtitle">Лента</span>
+            <h1 class="promo-section__title">Работает<br>идеально</h1>
+            <a href="#" class="promo-section__link">Узнать подробнее</a>
+        </div>
+    </section>
+    <section class="evaluation-section">
+        <!-- Левый блок с контентом -->
+        <div class="evaluation-section__content">
+            <h2 class="evaluation-section__title">Система оценивания</h2>
+            <p class="evaluation-section__text">
+            Система оценивания на сайте учитывает как объективные параметры работы (техника, композиция, соответствие ТЗ), так и субъективные — художественную выразительность и авторский стиль. Это даёт комплексную оценку творчества автора.
+            </p>
+        </div>
+
+        <!-- Правый блок со слайдером картинок -->
+        <div class="evaluation-section__slider-wrapper">
+            <div class="evaluation-section__slider" id="verticalSlider">
+            <!-- Слайд 1 -->
+            <div class="evaluation-section__slide">
+                <img src="resource/slider_img (1).png" alt="Система оценивания 1">
+                <div class="evaluation-section__rating"></div>
+            </div>
+            <!-- Слайд 2 -->
+            <div class="evaluation-section__slide">
+                <img src="resource/slider_img (2).png" alt="Система оценивания 2">
+                <div class="evaluation-section__rating"></div>
+            </div>
+            <!-- Слайд 3 -->
+            <div class="evaluation-section__slide">
+                <img src="resource/slider_img (3).png" alt="Система оценивания 3">
+                <div class="evaluation-section__rating"></div>
+            </div>
+            </div>
+
+            <!-- Вертикальная пагинация -->
+            <div class="evaluation-section__pagination" id="sliderPagination"></div>
+        </div>
+    </section>
+
+    <section class="contests-section">
+        <div class="contests-section__content">
+            <h2 class="contests-section__title">Конкурсы</h2>
+            <p class="contests-section__text">
+            В наших конкурсах ты можешь не просто показать свой талант, но и получить по-настоящему ценные награды: подписки на топовые сервисы, лицензии на софт, мерч от партнёров и даже денежные призы. Каждая работа — шанс выделиться.
+            </p>
+            <a href="../events/index.html" class="contests-section__link">Узнать подробнее</a>
+        </div>
+    </section>
+
+<footer class="footer">
+  <div class="footer__inner">
+
+    <div class="footer__top">
+
+      <div class="footer__brand">
+        <a class="footer__logo" href="">
+            <img src="./resource/logo.png" alt="">
+        </a>
+        <p class="footer__tagline">artback.support@gmail.com</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Навигация по сайту">
+<div class="footer__nav-group">
+  <ul class="menu-btn-list">
+    <li><button class="menu-btn" onclick="window.location.href='../lenta-page/front/index.html';">Лента</button></li>
+    <li><button class="menu-btn" onclick="window.location.href='../ArtBack/index.html';">О нас</button></li>
+    <li><button class="menu-btn" onclick="window.location.href='../events/index.html';">Конкурсы</button></li>
+    <li><button class="menu-btn" onclick="window.location.href='../LK/index.html';">Профиль</button></li>
+  </ul>
+</div>
+
+        <div class="footer__nav-group">
+          <h3>Компания</h3>
+          <ul>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-group">
+          <h3>Поддержка</h3>
+          <ul>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Чат с модерацией</a></li>
+            <li><a href="#">Предложка</a></li>
+            <li><a href="#">Связаться с нами</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer__newsletter">
+        <h3>Рассылка</h3>
+        <p>Уведомление о новых конкурсах</p>
+        <form class="footer__form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Готово ✓';">
+          <label for="footer-email" class="visually-hidden">Email</label>
+          <input id="footer-email" type="email" placeholder="Ваш email" required>
+          <button type="submit">Подписаться</button>
+        </form>
+        <p class="footer__form-note">Отписаться можно в любой момент.</p>
+      </div>
+
+    </div>
+
+    <hr class="footer__divider">
+
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <span>© 2026 Artback. Все права защищены.</span>
+      </div>
+
+      <div class="footer__social">
+        <a href="" aria-label="Tg">
+            <img src="./resource/tg_logo.png" alt="">
+        </a>
+        <a href="" aria-label="Vk">
+            <img src="./resource/Vk_logo.png" alt="">
+        </a>
+        <a href="" aria-label="Boosty">
+            <img src="./resource/boosty_logo.png" alt="">
+        </a>
+        </a>
+      </div>
+    </div>
+  </hr>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
