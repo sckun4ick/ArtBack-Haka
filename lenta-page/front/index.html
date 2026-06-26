@@ -21,7 +21,7 @@
             </div>
             <div class="nav__profile">
                 <button id="upload-button"><img src="images/header/upload.png" alt=""></button>
-                <button id="profile-button" ><img src="images/header/profile.png" alt=""></button>
+                <a href="../../LK/index.html"><button id="profile-button" ><img src="images/header/profile.png" alt=""></button></a>
             </div>
         </nav>
     </header>
@@ -44,10 +44,11 @@
                             <input type="text" id="titleInput" placeholder="Название работы">
                             <select id="categorySelect">
                                 <option value="" disabled selected>Выбрать категорию</option>
-                                <option value="drawing">Рисунок</option>
+                                <option value="digital">Digital</option>
+                                <option value="traditional">Традиционный</option>
+                                <option value="3d">3D</option>
                                 <option value="photo">Фотография</option>
-                                <option value="design">Дизайн</option>
-                                <option value="other">Другое</option>
+                                <option value="illustration">Иллюстрации</option>
                             </select>
                             <button id="publishBtn">Опубликовать</button>
                         </div>
@@ -61,11 +62,12 @@
             <div class="lenta__header">
                 <h1>Лента работ</h1>
                 <div class="lenta__header-genres">
-                    <button class="active">Все</button>
-                    <button>Рисунки</button>
-                    <button>Фотографии</button>
-                    <button>Дизайн</button>
-                    <button>Другое</button>
+                    <button class="active" data-filter="all">Все</button>
+                    <button data-filter="digital">Digital</button>
+                    <button data-filter="traditional">Традиционный</button>
+                    <button data-filter="3d">3D</button>
+                    <button data-filter="photo">Фотография</button>
+                    <button data-filter="illustration">Иллюстрации</button>
                 </div>
             </div>
 
@@ -85,10 +87,10 @@
                 <nav class="footer__nav" aria-label="Навигация по сайту">
                     <div class="footer__nav-group">
                         <ul class="menu-btn-list">
-                            <li><button class="menu-btn" onclick="window.location.href='../../lenta-page/front/index.html';">Лента</button></li>
-                            <li><button class="menu-btn" onclick="window.location.href='../../ArtBack/index.html';">О нас</button></li>
-                            <li><button class="menu-btn" onclick="window.location.href='../../events/index.html';">Конкурсы</button></li>
-                            <li><button class="menu-btn" onclick="window.location.href='../../LK/index.html';">Профиль</button></li>
+                            <li><button class="menu-btn">Лента</button></li>
+                            <li><button class="menu-btn">О нас</button></li>
+                            <li><button class="menu-btn">Конкурсы</button></li>
+                            <li><button class="menu-btn">Профиль</button></li>
                         </ul>
                     </div>
                     <div class="footer__nav-group">
